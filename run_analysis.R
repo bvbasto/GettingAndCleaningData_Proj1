@@ -84,7 +84,7 @@ colnames(uciHar)<-gsub("std", "Std", names(uciHar))
 colnames(uciHar)<-gsub("x$", "X", names(uciHar))
 colnames(uciHar)<-gsub("y$", "Y", names(uciHar))
 colnames(uciHar)<-gsub("z$", "Z", names(uciHar))
-
+write.table(uciHar,"step4DataSet.txt",append=FALSE,row.name=FALSE) 
 
 
 
